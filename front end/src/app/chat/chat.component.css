@@ -1,0 +1,186 @@
+body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Left side styles */
+        .leftSide {
+            width: 30%;
+            background-color: navy;
+            color: #ecf0f1;
+            overflow-y: auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #34495e;
+        }
+
+        .userimg img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        .icon-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .icon-list li {
+            margin-right: 10px;
+        }
+
+        .search {
+            padding: 15px;
+            border-bottom: 1px solid #34495e;
+        }
+
+        .search-icon img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background-color: #34495e;
+            color: #ecf0f1;
+        }
+
+        .chatList {
+            padding: 15px;
+        }
+
+        .block {
+            display: flex;
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #34495e;
+        }
+
+        .imgbx img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .details {
+            flex-grow: 1;
+        }
+
+        .listHead {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Right side styles */
+        .rightSide {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: #3498db;
+            color: #ecf0f1;
+        }
+
+        .userimg img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .imgText {
+            display: flex;
+            align-items: center;
+        }
+
+        .ChatBox {
+            margin: 10px;
+        }
+
+        .message {
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 70%;
+        }
+
+        .my_message {
+            justify-content:flex-end;
+            background-color: navy;
+            color: #ecf0f1;
+            align-self: flex-end;
+        }
+
+        .frnd_message {
+            background-color: white;
+            color: black;
+        }
+
+        .chatbox_input {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #3498db;
+        }
+
+        .chatbox_input input {
+            flex-grow: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .chatbox_input .icon-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .icon-list li {
+            margin-right: 10px;
+        }
+
+        .icon-list img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .leftSide,
+            .rightSide {
+                width: 100%;
+            }
+        }

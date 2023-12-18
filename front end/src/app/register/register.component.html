@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+      
+    </head>
+    <body>
+    
+        <div class="wrapper">
+          <h1>Sign Up   </h1>
+
+
+          <form [formGroup]="myForm" action="#" method="get" >
+
+              <div class="input-box">
+              <input type="text" placeholder="FirstName" id="firstName" formControlName="firstName" >
+              </div>
+
+              <div class="input-box">
+              <input type="text" placeholder="LastName" id="lastName" formControlName="lastName">
+              </div>
+
+              <div class="input-box">
+              <input type="text" placeholder="EmailAddress" id="emailAddress" formControlName="emailAddress"> 
+              </div>
+    
+          <div class="terms">
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox"> I agree to these <a href="#">Terms & Conditions</a></label>
+          </div>
+    
+          <button type="submit" (click)="submitForm()">Register</button>
+          </form>
+          <div class="register-link">
+            <p>have an account? <a href="#"></a><a routerLink="/login">Login</a>
+          </div>
+        </div>
+    </body>
+    </html>
+
+
